@@ -1,0 +1,7 @@
+{
+    "galaxy.meteor.com": {
+       "env": {
+         "MONGO_URL": "mongodb+srv://pitfal_scorbord:eiG9YcJ2AJv7hpK4@scorbord01-6cgrh.mongodb.net/test"
+       }
+     }
+  }
