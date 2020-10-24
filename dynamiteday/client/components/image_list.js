@@ -4,17 +4,27 @@
 import React from 'react';
 import ImageDetail from './image_detail';
 
+
 // variables
-const IMAGES = [
-    { title: 'Pen', link: 'https://dummyimage.com/600x400' },
-    { title: 'Pine Tree', link: 'https://dummyimage.com/600x400' },
-    { title: 'Mug', link: 'https://dummyimage.com/600x400' }
-]
+/* const IMAGES = [
+    { title: 'All In!', link: 'https://dummyimage.com/600x400' },
+    { title: 'Wedding Info', link: 'https://dummyimage.com/600x400' },
+    { title: 'Wedding Party', link: 'https://dummyimage.com/600x400' }
+] */
 
 // build component
-const ImageList = () => {
-    const RenderedImages = IMAGES.map(image => {
-        return <ImageDetail key={image.title} image={image} />
+// props is being passes from parent object (main.js) and is state.images
+const ImageList = (props) => {
+    //const RenderedImages = IMAGES.map(image => {
+    //const RenderedImages = props.images.map(image => {
+        console.log(props);
+
+    // filter creates a new array (validImages) that passes a test (in this case boolean true / false is_album)
+    const validImages = props.images.filter(image => !image.is_album);
+
+
+    const RenderedImages = validImages.map(image => {
+        return <ImageDetail key={image.public_id} image={image} />
     });
 
     return (
