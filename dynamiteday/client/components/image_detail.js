@@ -29,7 +29,7 @@ const ImageDetail = (props) => {
             <Accordion>
                 <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="0">
-                        <div className="grid-container">
+                        <div className="grid-container btn">
                             <div style={styleObj}>{props.image.context.custom.caption}</div>
                             <div> <img src={url} className='img-rounded img-responsive' /></div>
                             <div>{props.image.context.custom.alt}</div>
