@@ -45,14 +45,16 @@ class App extends Component {
     }
     render() {
         // show new state after setState is called (render gets called again)
+
+        // jsx for imageList containing imageDetails. pojo (plain old java object)
+        // !!!! state being passes to imageList props !!!!
         console.log(this.state.images);
         return (
-
-            // jsx for imageList containing imageDetails. pojo (plain old java object)
-            // !!!! state being passes to imageList props !!!!
-
-            <ImageList images={this.state.images} />
-
+            <>
+                <h1>Our Dynamite Day</h1>
+                <h3>Tori and Thomas (TNT) Get Married</h3>
+                <ImageList images={this.state.images} />
+            </>
         )
     }
 }

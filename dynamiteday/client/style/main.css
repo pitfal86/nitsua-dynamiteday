@@ -22,9 +22,9 @@
     text-align: center;
   }
   
-  .grid-container-page {
+  .grid-container-page {    
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: 200px auto auto auto auto;
     background-color: lightgray;
     padding: 10px;
     font-family: 'Snell Roundhand';
@@ -37,3 +37,15 @@
     font-size: 20px;
     padding: 10px;
   }
+
+  h1 {
+      font-family: 'Apple Chancery';
+      font-size: 50px;
+      text-align: center;
+  }
+  
+  h3 {
+    font-family: 'Bradley Hand';
+    font-size: 30px;
+    text-align: center;
+}

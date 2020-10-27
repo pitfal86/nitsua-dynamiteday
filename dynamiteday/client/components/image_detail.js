@@ -36,9 +36,7 @@ const ImageDetail = (props) => {
                         </div>
                     </Accordion.Toggle>
                     <Accordion.Collapse eventKey="0">
-                        <div className="grid-container-page">
                             <ImagePage caption={props.image.context.custom.caption} />
-                        </div>
                     </Accordion.Collapse>
                 </Card>
             </Accordion>
