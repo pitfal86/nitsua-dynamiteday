@@ -62,3 +62,18 @@
     background-color: tomato; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, maroon , orange);
   }
+
+  .top-left {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    color: darkred;
+  }
+  .top-second {
+    position: absolute;
+    left: 50%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    color: orangered;
+  }
