@@ -52,7 +52,6 @@ class App extends Component {
         return (
             <div style={{backgroundColor:"WhiteSmoke"}}>
                 <img style={{width: "100%", padding: "20px"}} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603820405/dynamitedayphotos/Header_ksmnyp.jpg" className='img-responsive center' />
-                <br/>
                 <ImageList images={this.state.images} />
             </div>
         )
