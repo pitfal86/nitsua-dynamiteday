@@ -34,7 +34,7 @@ class App extends Component {
         console.log('App is about to render and load data');
 
         // axios is ajax library for http calls (async js)
-        Axios.get('http://res.cloudinary.com/dz7kvpuzo/image/list/wedding.json').then(response => {
+        Axios.get('https://res.cloudinary.com/dz7kvpuzo/image/list/wedding.json').then(response => {
             console.log(response);
             // changing the state, this will rerender imageList and child imageDetails. waits for request to returne data
             this.setState({
