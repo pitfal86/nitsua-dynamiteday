@@ -28,7 +28,7 @@
     grid-template-columns: 200px auto auto auto auto;
     background-color: lightgray;
     padding: 10px;
-    font-family: 'Apple Chancery';
+    font-family: cursive;
     text-align: center;    
   }
   
@@ -40,9 +40,9 @@
   }
 
   h1 {
-      font-family: 'Apple Chancery';
-      font-size: 50px;
-      text-align: center;
+    font-family: cursive;
+    font-size: 50px;
+    text-align: center;
   }
   
   h3 {
@@ -61,6 +61,4 @@
   #grad1 {
     background-color: tomato; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, maroon , orange);
-
-   
   }
