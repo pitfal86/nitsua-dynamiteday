@@ -28,9 +28,7 @@ const ImageList = (props) => {
     });
 
     return (
-        <ul className="media-list list-group">
-            {RenderedImages}
-        </ul>
+        <div>{RenderedImages}</div>
     );
 };
 

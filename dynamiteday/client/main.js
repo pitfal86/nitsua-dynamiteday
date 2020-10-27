@@ -9,7 +9,7 @@ import Axios from 'axios';
 
 
 
-import {Image, Video, Transformation, CloudinaryContext} from 'cloudinary-react';
+import { Image, Video, Transformation, CloudinaryContext } from 'cloudinary-react';
 // create a component
 /* const App = () => {
     return (
@@ -45,14 +45,14 @@ class App extends Component {
     }
     render() {
         // show new state after setState is called (render gets called again)
-        console.log( this.state.images);
+        console.log(this.state.images);
         return (
 
             // jsx for imageList containing imageDetails. pojo (plain old java object)
             // !!!! state being passes to imageList props !!!!
-            <div>
-                <ImageList images={this.state.images}/>
-            </div>
+
+            <ImageList images={this.state.images} />
+
         )
     }
 }
