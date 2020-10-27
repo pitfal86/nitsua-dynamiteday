@@ -1,25 +1,26 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto 300px auto;
+    grid-template-columns: auto minmax(186px, auto) auto;
     background-color: lightgray;
     padding: 10px;
-    font-family: 'Apple Chancery';
-    text-align: center;    
+    font-family: 'Bradley Hand';
+    text-align: center;  
   }
   
   .grid-container > div {
     background-color: white;
     text-align: left;
     font-size: 30px;
-    padding: 10px;
+    padding: 10px; 
   }
 
   .grid-container:hover {
     display: grid;
-    grid-template-columns: auto 300px auto;
+    grid-template-columns: auto minmax(186px, auto) auto;
     background-color: grey;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
   }
   
   .grid-container-page {    
@@ -27,7 +28,7 @@
     grid-template-columns: 200px auto auto auto auto;
     background-color: lightgray;
     padding: 10px;
-    font-family: 'Snell Roundhand';
+    font-family: 'Apple Chancery';
     text-align: center;    
   }
   
@@ -49,3 +50,17 @@
     font-size: 30px;
     text-align: center;
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #grad1 {
+    background-color: tomato; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, maroon , orange);
+
+   
+  }

@@ -50,11 +50,15 @@ class App extends Component {
         // !!!! state being passes to imageList props !!!!
         console.log(this.state.images);
         return (
-            <>
+            <div style={{backgroundColor:"WhiteSmoke"}}>
+                
                 <h1>Our Dynamite Day</h1>
                 <h3>Tori and Thomas (TNT) Get Married</h3>
+                
+                <img style={{width: "470px"}} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603804363/dynamitedayphotos/DSC_3967-_ZF-8109-01061-1-015_irqr9m.jpg" className='img-responsive center' />
+                <br/>
                 <ImageList images={this.state.images} />
-            </>
+            </div>
         )
     }
 }

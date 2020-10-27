@@ -14,8 +14,8 @@ const ImageDetail = (props) => {
 
     const styleObj = {
         'fontWeight': 'bold',
-        'fontSize' : '40px',
-        'textDecoration': 'underline'
+        'fontSize' : '35px',
+        'font-family' : 'fantasy'
         }
 
     return (
@@ -29,7 +29,7 @@ const ImageDetail = (props) => {
             <Accordion>
                 <Card>
                     <Accordion.Toggle as={Card.Header} eventKey="0">
-                        <div className="grid-container btn">
+                        <div className="grid-container">
                             <div style={styleObj}>{props.image.context.custom.caption}</div>
                             <div> <img src={url} className='img-rounded img-responsive' /></div>
                             <div>{props.image.context.custom.alt}</div>
