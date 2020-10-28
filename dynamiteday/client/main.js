@@ -48,7 +48,7 @@ class App extends Component {
         // !!!! state being passes to imageList props !!!!
         console.log(this.state.images);
         return (
-            <div style={{ backgroundColor: "#f2ac4c" }}>
+            <div style={{ backgroundColor: "#f7c783" }}>
                 <img style={{ width: "100%", padding: "10px"}} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603820405/dynamitedayphotos/Header_ksmnyp.jpg" className='img-responsive center' />
                 <ImageList images={this.state.images} />
             </div>
