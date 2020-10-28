@@ -1,24 +1,22 @@
 .grid-container {
     display: grid;
     grid-template-columns: auto minmax(186px, auto) auto;
-    background-color: lightgray;
+    background-color: #f2ac4c;
     padding: 10px;
     font-family: 'Bradley Hand';
     text-align: center;  
+    color:#f2ac4c;
   }
   
   .grid-container > div {
-    background-color: white;
+    background-color:#612121;
     text-align: left;
     font-size: 30px;
     padding: 10px; 
   }
 
   .grid-container:hover {
-    display: grid;
-    grid-template-columns: auto minmax(186px, auto) auto;
-    background-color: grey;
-    padding: 10px;
+    background-color: #612121;    
     text-align: center;
     cursor: pointer;
   }
@@ -26,14 +24,16 @@
   .grid-container-page {    
     display: grid;
     grid-template-columns: 200px auto auto auto auto;
-    background-color: lightgray;
+    background-color: #f2ac4c;
     padding: 10px;
     font-family: cursive;
-    text-align: center;    
+    text-align: center; 
+    color: #612121;
+    font-weight: 900;
   }
   
   .grid-container-page > div {
-    background-color: lightgray;
+    background-color: #f2ac4c;
     text-align: center;
     font-size: 20px;
     padding: 10px;
@@ -56,24 +56,4 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
-
-  #grad1 {
-    background-color: tomato; /* For browsers that do not support gradients */
-    background-image: linear-gradient(to right, maroon , orange);
-  }
-
-  .top-left {
-    position: absolute;
-    left: 50%;
-    top: 20%;
-    transform: translate(-50%, -50%);
-    color: darkred;
-  }
-  .top-second {
-    position: absolute;
-    left: 50%;
-    top: 110%;
-    transform: translate(-50%, -50%);
-    color: orangered;
   }

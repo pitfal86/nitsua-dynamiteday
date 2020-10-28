@@ -15,7 +15,7 @@ const ImageDetail = (props) => {
     const styleObj = {
         'fontWeight': 'bold',
         'fontSize' : '35px',
-        'font-family' : 'fantasy'
+        'fontFamily' : 'fantasy'
         }
 
     return (

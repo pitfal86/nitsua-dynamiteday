@@ -7,8 +7,6 @@ import ImageList from './components/image_list';
 import Axios from 'axios';
 
 
-
-
 import { Image, Video, Transformation, CloudinaryContext } from 'cloudinary-react';
 // create a component
 /* const App = () => {
@@ -30,7 +28,7 @@ class App extends Component {
     }
 
 
-    componentWillMount() {
+    componentDidMount() {
         console.log('App is about to render and load data');
 
         // axios is ajax library for http calls (async js)
@@ -50,8 +48,8 @@ class App extends Component {
         // !!!! state being passes to imageList props !!!!
         console.log(this.state.images);
         return (
-            <div style={{backgroundColor:"WhiteSmoke"}}>
-                <img style={{width: "100%", padding: "20px"}} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603820405/dynamitedayphotos/Header_ksmnyp.jpg" className='img-responsive center' />
+            <div style={{ backgroundColor: "#f2ac4c" }}>
+                <img style={{ width: "100%", padding: "10px"}} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603820405/dynamitedayphotos/Header_ksmnyp.jpg" className='img-responsive center' />
                 <ImageList images={this.state.images} />
             </div>
         )
