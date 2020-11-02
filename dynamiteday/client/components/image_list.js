@@ -17,14 +17,11 @@ import ImageDetail from './image_detail';
 const ImageList = (props) => {
     //const RenderedImages = IMAGES.map(image => {
     //const RenderedImages = props.images.map(image => {
-        console.log(props);
 
     // filter creates a new array (validImages) that passes a test (in this case boolean true / false is_album)
-    const validImages = props.images.filter(image => !image.is_album);
-
-
-    const RenderedImages = validImages.map(image => {
-        return <ImageDetail key={image.public_id} image={image} />
+    //const validImages = props.mainpage.filter(image => !image.is_album);p=
+    const RenderedImages = props.mainpage.map(image => {
+        return <ImageDetail key={image.public_id} mainpage={image} allin={props.allin}/>
     });
 
     return (

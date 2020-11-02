@@ -3,13 +3,11 @@ import AllIn from './image_page_allin'
 
 // props.ups and props.downs from image_detail.js
 
-function displayView(pageName) {
-    console.log('page')
-    console.log(pageName.caption);
-    switch(pageName.caption) {
+function displayView(totalprops) {
+    switch(totalprops.caption) {
       case 'All in':
         return (
-            <AllIn />
+            <AllIn allin={totalprops.allin}/>
         );
       case 'Manager':
         return 'Coming Soon...';
@@ -19,9 +17,6 @@ function displayView(pageName) {
   }
   
 const ImagePage = (props) => {
-    console.log('cool')
-    console.log(props);
-
     // ES6 destructuring to pull in properties from props
     //const { ups, downs } = props;
 
@@ -45,7 +40,7 @@ const ImagePage = (props) => {
 
     // for style, the first set of brackets means variable referenced, second means it is object
     return (
-        <>{displayView(props)}</>
+        <span>{displayView(props)}</span>
     );
 }
 
