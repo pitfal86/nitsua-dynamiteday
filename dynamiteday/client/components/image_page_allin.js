@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SimpleModalLauncher from '../components/SimpleModalLaunche/SimpleModalLauncher';
-import { createUseStyles } from 'react-jss'
+import { createUseStyles } from 'react-jss';
 
 function createAllInMap(arr) {
   const mapOfUniqueElements = new Map();
@@ -242,6 +242,9 @@ const ImagePage = (props) => {
       </div>
       <div className="grid-container-page">
         <div>Invitations Sent<br />-TODO-</div>
+      </div>
+      <div className="grid-container-page">
+        <div>Wedding Rings Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Final Head Count<br />-TODO-</div>
