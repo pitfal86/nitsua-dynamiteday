@@ -211,13 +211,91 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
-        <div>Catering Picked<br />-TODO-</div>
         <div>
-          <a href="https://crookedwillowevents.com/wp-content/uploads/2019/04/Occasions_SampleEstimates_2019.pdf" target="_blank">Ocassions</a>
+          Dress picked
           <br />
-          <a href="https://crookedwillowevents.com/wp-content/uploads/2019/04/Three-Tomatoes-Crooked-Willow-Sample-Menus-2019.pdf" target="_blank">Three Tomatoes</a>
+          11-16-2020
           <br />
-          <a href="https://crookedwillowevents.com/wp-content/uploads/2019/04/CBD-Proposal-for-Crooked-Willow-Farms.pdf" target="_blank">Catering By Design</a>
+            <a href="https://www.davidsbridal.com/" target="_blank">David's Bridal</a>
+        </div>
+        <div className={classes.imageModal}>
+            <img className="center" src={"https://www.davidsbridal.com/wcsstore/images/wwcm/categorylandingpages/brides/2020/Brides_CLP_Hero_Update_TABLET.jpg"} />
+        </div>
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>
+          DJ picked
+          <br />
+          11-24-2020
+          <br />
+            <a href="https://myelitedj.com/" target="_blank">Elite DJ</a>
+        </div>
+        <div className={classes.imageModal}>
+            <img className="center" src={"https://myelitedj.com/wp-content/uploads/2020/05/Main-Page-1.jpeg"} />
+        </div>
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>
+          Wedding Planner picked
+          <br />
+          12-1-2020
+          <br />
+            <a href="https://www.birchandhoneycollective.com/" target="_blank">Birch and Honey</a>
+        </div>
+        <div className={classes.imageModal}>
+            <img className="center" src={"https://static.wixstatic.com/media/c5a9fb_015b391143164be8a2bd67b781864d69~mv2.jpeg"} />
+        </div>
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>
+          Photographer Picked
+          <br />
+          12-2-2020
+          <br />
+            <a href="https://www.alldigitalphotoandvideo.com/" target="_blank">All Digital Photo and Video</a>
+        </div>
+        <div className={classes.imageModal}>
+            <img className="center" src={"https://www.alldigitalphotoandvideo.com/wp-content/uploads/2020/05/ADS-Staff-2019-001.png"} />
+        </div>
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>
+          Catering Picked
+          <br />
+          12-5-2020
+          <br />
+            <a href="https://www.occasionsdenver.com/menus-and-events/weddings/" target="_blank">Ocassions</a>
+        </div>
+        <div className={classes.imageModal}>
+            <img className={classes.imageModal} src={"https://www.occasionsdenver.com/wp-content/uploads/2019/12/REDD4731-copy.jpg"} />
+        </div>
+        <div className={classes.imageModal}>
+            <img className={classes.imageModal} src={"https://www.occasionsdenver.com/wp-content/uploads/2019/12/SaraConnor-541-of-855-copy-e1576013462247-450x400.jpg"} />
+        </div>
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>
+          Save the date picked
+          <br />
+          12-7-2020
+          <br />
+            <a href="https://www.shutterfly.com/share-product/?shareid=e7749ce2-90a7-4229-8d42-d6f3c5d6582c&cid=SHARPRDWEBORDEM&esch=1" target="_blank">Shutterfly</a>
+        </div>
+        <div>
+            <img className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1608045533/dynamitedayphotos/savethedate_yryzoy.jpg"} />
+        </div>
+        <div className={classes.imageModal}>
+            <img className={classes.imageModal} src={"https://cdn-image.staticsfly.com/i/tws/store/P254815SY_CAT_tws_hero_0402.jpg"} />
         </div>
       </div>
       <hr></hr>
@@ -230,12 +308,6 @@ const ImagePage = (props) => {
       </div>
       <div className="grid-container-page">
         <div>Cake Picked<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
-        <div>Music / DJ Picked<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
-        <div>Dress Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Tuxes Picked<br />-TODO-</div>
