@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SimpleModalLauncher from '../components/SimpleModalLaunche/SimpleModalLauncher';
+import SimpleModalLauncher from './SimpleModalLaunche/SimpleModalLauncher';
 import { createUseStyles } from 'react-jss';
 
 function createAllInMap(arr) {
@@ -162,7 +162,7 @@ const ImagePage = (props) => {
   });
 
   return (
-    <>
+    <div>
       <div className="grid-container-page">
         <div>{propCaption}<br />{propDate}</div>
         {TheProposal}
@@ -292,7 +292,7 @@ const ImagePage = (props) => {
             <a href="https://www.shutterfly.com/share-product/?shareid=e7749ce2-90a7-4229-8d42-d6f3c5d6582c&cid=SHARPRDWEBORDEM&esch=1" target="_blank">Shutterfly</a>
         </div>
         <div>
-            <img className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1608045533/dynamitedayphotos/savethedate_yryzoy.jpg"} />
+            <img className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg"} />
         </div>
         <div className={classes.imageModal}>
             <img className={classes.imageModal} src={"https://cdn-image.staticsfly.com/i/tws/store/P254815SY_CAT_tws_hero_0402.jpg"} />
@@ -330,7 +330,7 @@ const ImagePage = (props) => {
       <div className="grid-container-page">
         <div>Rehearsal<br />-TODO-</div>
       </div>
-    </>
+    </div>
   );
 }
 

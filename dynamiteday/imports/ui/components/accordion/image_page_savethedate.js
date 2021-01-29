@@ -1,7 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 
-
 const useStyles = createUseStyles({
   imageModal: {
     padding: '0.4rem',
@@ -18,12 +17,12 @@ const ImagePage = (props) => {
   const classes = useStyles()
 
   return (
-    <>
+    <div>
       <div className="grid-container-page">
         <div style={{ fontSize: "30px" }}>{"When:"}</div>
         <div className={classes.imageModal}>
             <br />
-            <img className={classes.imageInModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1608045533/dynamitedayphotos/savethedate_yryzoy.jpg"} />
+            <img className={classes.imageInModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg"} />
         </div>
         <div style={{ fontSize: "30px" }}>{"Where:"}</div>
         <div className={classes.imageModal} style={{ padding: "20px" }}>
@@ -52,7 +51,7 @@ const ImagePage = (props) => {
         <div>{"Placeholder"}</div>
       </div>
       <hr></hr>
-    </>
+    </div>
   );
 }
 

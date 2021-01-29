@@ -1,8 +1,5 @@
-// create image list component
-
-// import react
 import React from 'react';
-import ImagePage from './image_page';
+import ImagePage from '/imports/ui/components/accordion/image_page';
 import Accordion from 'react-bootstrap/Accordion';
 import { Card } from "react-bootstrap";
 
@@ -17,12 +14,6 @@ const ImageDetail = (props) => {
     };
 
     return (
-        // shows title, description and upvots
-
-        //                <p>
-        //{props.image.ups}
-        //{props.image.downs}
-        //                </p>
         <div>
             <Accordion>
                 <Card>

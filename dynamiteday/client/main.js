@@ -1,19 +1,17 @@
-// all js is ran automatically
+import '/imports/startup/client';
+import '/imports/api/imagedata';
+import '/imports/ui/layouts';
+import '/imports/ui/pages';
+import '/imports/ui/stylesheets/style.css';
+import '/imports/ui/components/form-controls/';
 
+// all js is ran automatically
 // import the react lib
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
-import ImageList from './components/image_list';
+import ImageList from '/imports/ui/components/accordion/image_list';
 import Axios from 'axios';
 
-// create a component
-/* const App = () => {
-    return (
-        <div>
-            <ImageList />
-        </div>
-    );
-}; */
 class App extends Component {
     // all classes that extend component need a constructor
     constructor(props) {
@@ -24,8 +22,6 @@ class App extends Component {
         // only set once per component. state is initialized and use setState to change. setting 'images' property
         this.state = { mainpage: [], allin: [] }
     }
-
-
     componentDidMount() {
         // axios is ajax library for http calls (async js)
         Axios.get('https://res.cloudinary.com/dz7kvpuzo/image/list/wedding.json').then(response => {

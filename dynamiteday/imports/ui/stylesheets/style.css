@@ -4,33 +4,33 @@
     background-color: #f7c783;
     padding: 10px;
     font-family: 'Bradley Hand';
-    text-align: center;  
+    text-align: center;
     color:#f7c783;
   }
-  
+
   .grid-container > div {
     background-color:#713633;
     text-align: left;
     font-size: 30px;
-    padding: 10px; 
+    padding: 10px;
   }
 
   .grid-container:hover {
-    background-color: #713633;    
+    background-color: #713633;
     text-align: center;
     cursor: pointer;
   }
-  
-  .grid-container-page {    
+
+  .grid-container-page {
     display: grid;
     grid-template-columns: minmax(auto, 20%) auto auto auto auto;
     background-color: #f7c783;
     font-family: cursive;
-    text-align: center; 
+    text-align: center;
     color: #612121;
     font-weight: 900;
   }
-  
+
   .grid-container-page > div {
     background-color: #f7c783;
     text-align: center;
@@ -50,7 +50,7 @@
     font-size: 50px;
     text-align: center;
   }
-  
+
   h3 {
     font-family: 'Bradley Hand';
     font-size: 30px;
@@ -64,10 +64,36 @@
     width: 50%;
   }
 
-  hr { 
-    display: block; 
+  hr {
+    display: block;
     height: 1px;
-    border: 0; 
+    border: 0;
     border-top: 1px solid #713633;
-    margin: 1em 0; padding: 0; 
+    margin: 1em 0; padding: 0;
   }
+
+  body {
+    background-color: #f7c783;
+  }
+
+  .grid-container-upload {
+    display: grid;
+    grid-template-columns: minmax(auto, 20%) auto auto auto;
+    background-color: #f7c783;
+    font-family: cursive;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    margin: 1em;
+    }
+
+  .grid-container-uploaded {
+    display: grid;
+    grid-template-columns: minmax(auto, 20%) auto auto auto auto;
+    background-color: #f7c783;
+    font-family: cursive;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    margin: 1em;
+    }
