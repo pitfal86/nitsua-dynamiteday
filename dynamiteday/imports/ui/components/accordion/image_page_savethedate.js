@@ -22,7 +22,7 @@ const ImagePage = (props) => {
         <div style={{ fontSize: "30px" }}>{"When:"}</div>
         <div className={classes.imageModal}>
             <br />
-            <img className={classes.imageInModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg"} />
+            <img style={{ width: "60%" }} className={classes.imageInModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg"} />
         </div>
         <div style={{ fontSize: "30px" }}>{"Where:"}</div>
         <div className={classes.imageModal} style={{ padding: "20px" }}>
@@ -36,19 +36,67 @@ const ImagePage = (props) => {
       </div>
       <hr></hr>
 
-      <div className="grid-container-page">
-        <div>{"Bridesmaids"}</div>
-        <div>{"Placeholder"}</div>
-        <div>{"Placeholder"}</div>
-        <div>{"Placeholder"}</div>
+      <div className="grid-container-weddingparty">
+        <h2>{"Bridesmaids"}</h2>
+        <label>{"Chelsey"}
+            <div className={classes.imageModal}>
+              <br />
+              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611979366/dynamitedayphotos/c4jjbcwq8wbl4oludek6.jpg"} />
+            </div>
+            <div style={{ padding: "10px" }}>
+                {"Chelsey is Tori’s cousin and they are only 10 months apart in age. They have been best friends since childhood and Chelsey knows Tori better than anyone. Chelsey is a director of a Rocky Mountain HIDAA and lives with her two dauchsands, Reggie and Gertie. She is “Sherpa” to 8 nieces and nephews, and very active in her church life. She is the maid of honor!"}
+            </div>
+        </label>
+        <label>{"Caitlin"}
+            <div className={classes.imageModal}>
+              <br />
+              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611981148/dynamitedayphotos/cait_02_vpcgro.jpg"} />
+            </div>
+            <div style={{ padding: "10px" }}>
+                {"Caitlin is Tori’s cousin and three years older. They grew up down the street from each other and Caitlin used to drive Tori to school in high school. Caitlin is a nurse, and a role model for Tori in her life. She is married to Cason, a super cool dude, and has two amazing daughters, Annabelle and Olive, who are the flower girls for the wedding. Caitlin is a bridesmaid!"}
+            </div>
+        </label>
+        <label>{"Kacey"}
+            <div className={classes.imageModal}>
+              <br />
+              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611979382/dynamitedayphotos/lnforay7qc6j2opizpp8.jpg"} />
+            </div>
+            <div style={{ padding: "10px" }}>
+                {"Kacey is Tori’s best friend from work. They met 9 years ago when they both started working as CNAs on the same floor in the hospital they both currently still work for. Kacey is Tori’s best adventure buddy, always ready and willing to do anything and everything active. She is a stroke coordinator at a Comprehensive Stroke Center hospital and has two girls, Addie and Kendall. Her boyfriend Tony works at the same hospital. Kacey is a bridesmaid!"}
+            </div>
+        </label>
       </div>
       <hr></hr>
 
-      <div className="grid-container-page">
-        <div>{"Groomsmen"}</div>
-        <div>{"Placeholder"}</div>
-        <div>{"Placeholder"}</div>
-        <div>{"Placeholder"}</div>
+<div className="grid-container-weddingparty">
+        <h2>{"Groomsmen"}</h2>
+        <label>{"Greg"}
+            <div className={classes.imageModal}>
+              <br />
+              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611984032/dynamitedayphotos/mpheaj7v4qcmebxzlw93.jpg"} />
+            </div>
+            <div style={{ padding: "10px" }}>
+                {"Greg has been Thomas' friend the longest, but to avoid sounding old we'll not mention the exact years. Through thick and thing they've been through it all and for some reason Greg still answers the phone when Thomas calls. He's a great friend and person!"}
+            </div>
+        </label>
+        <label>{"Joe"}
+            <div className={classes.imageModal}>
+              <br />
+              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611984044/dynamitedayphotos/why1lk27q4mkpawr8p2h.jpg"} />
+            </div>
+            <div style={{ padding: "10px" }}>
+                {"Joe and Thomas met in college and have certainly seen and done it all together. Through the wild times and great memories, Joe managed to keep Thomas alive and out of trouble long enough to meet his person. Thankful for his friendship and being there!"}
+            </div>
+        </label>
+        <label>{"Zach"}
+            <div className={classes.imageModal}>
+              <br />
+              <img style={{ width: "100%" }} className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611984131/dynamitedayphotos/zach_qlqfvw.jpg"} />
+            </div>
+            <div style={{ padding: "10px" }}>
+                {"Zach is / has been the catalyst in Thomas' life for great change. This goes all the way back to when Thomas (not knowing anyone) moved to Fort Collins and was given the chance to tag along with Zach and his crew. The rest as they say... is history. Wouldn't be here today!"}
+            </div>
+        </label>
       </div>
       <hr></hr>
     </div>

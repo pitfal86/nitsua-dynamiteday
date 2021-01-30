@@ -218,13 +218,6 @@ const ImagePage = (props) => {
           <br />
             <a href="https://www.davidsbridal.com/" target="_blank">David's Bridal</a>
         </div>
-        <div className={classes.imageModal}>
-            <img className="center" src={"https://www.davidsbridal.com/wcsstore/images/wwcm/categorylandingpages/brides/2020/Brides_CLP_Hero_Update_TABLET.jpg"} />
-        </div>
-      </div>
-      <hr></hr>
-
-      <div className="grid-container-page">
         <div>
           DJ picked
           <br />
@@ -232,13 +225,6 @@ const ImagePage = (props) => {
           <br />
             <a href="https://myelitedj.com/" target="_blank">Elite DJ</a>
         </div>
-        <div className={classes.imageModal}>
-            <img className="center" src={"https://myelitedj.com/wp-content/uploads/2020/05/Main-Page-1.jpeg"} />
-        </div>
-      </div>
-      <hr></hr>
-
-      <div className="grid-container-page">
         <div>
           Wedding Planner picked
           <br />
@@ -246,13 +232,6 @@ const ImagePage = (props) => {
           <br />
             <a href="https://www.birchandhoneycollective.com/" target="_blank">Birch and Honey</a>
         </div>
-        <div className={classes.imageModal}>
-            <img className="center" src={"https://static.wixstatic.com/media/c5a9fb_015b391143164be8a2bd67b781864d69~mv2.jpeg"} />
-        </div>
-      </div>
-      <hr></hr>
-
-      <div className="grid-container-page">
         <div>
           Photographer Picked
           <br />
@@ -260,13 +239,6 @@ const ImagePage = (props) => {
           <br />
             <a href="https://www.alldigitalphotoandvideo.com/" target="_blank">All Digital Photo and Video</a>
         </div>
-        <div className={classes.imageModal}>
-            <img className="center" src={"https://www.alldigitalphotoandvideo.com/wp-content/uploads/2020/05/ADS-Staff-2019-001.png"} />
-        </div>
-      </div>
-      <hr></hr>
-
-      <div className="grid-container-page">
         <div>
           Catering Picked
           <br />
@@ -274,14 +246,11 @@ const ImagePage = (props) => {
           <br />
             <a href="https://www.occasionsdenver.com/menus-and-events/weddings/" target="_blank">Ocassions</a>
         </div>
-        <div className={classes.imageModal}>
-            <img className={classes.imageModal} src={"https://www.occasionsdenver.com/wp-content/uploads/2019/12/REDD4731-copy.jpg"} />
-        </div>
-        <div className={classes.imageModal}>
-            <img className={classes.imageModal} src={"https://www.occasionsdenver.com/wp-content/uploads/2019/12/SaraConnor-541-of-855-copy-e1576013462247-450x400.jpg"} />
-        </div>
       </div>
       <hr></hr>
+
+
+
 
       <div className="grid-container-page">
         <div>
@@ -301,6 +270,41 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
+        <div>
+          Tuxedos picked
+          <br />
+          1-16-2021
+          <br />
+            <a href="https://www.menswearhouse.com/" target="_blank">Mens Wearhouse</a>
+        </div>
+        <div>
+            <img className="center" src={"https://image.menswearhouse.com/is/image/marketing/21-2396537-hp-sh-wedding-2x.jpg"} />
+        </div>
+        <div className={classes.imageModal}>
+            <img style={{ width: "40%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611987018/dynamitedayphotos/IMG_0329_m2hx5d.jpg"} />
+        </div>
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>
+          Honeymoon Booked
+          <br />
+          1-25-2021
+          <br />
+            <a href="https://www.gohawaii.com/islands/maui" target="_blank">Hawaii - Maui</a>
+        </div>
+        <div>
+            <img className="center" src={"https://www.gohawaii.com/sites/default/files/styles/wide_carousel_large/public/content-carousel-images/10105_mauiregionslp_VideoThumbnail.jpg?itok=vzKj-jK9"} />
+        </div>
+        <div>
+            <img  className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611986922/dynamitedayphotos/Screen_Shot_2021-01-25_at_1.07.59_PM_kpqktb.png"} />
+        </div>
+      </div>
+      <hr></hr>
+
+
+      <div className="grid-container-page">
         <div>Invitations Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
@@ -310,7 +314,7 @@ const ImagePage = (props) => {
         <div>Cake Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
-        <div>Tuxes Picked<br />-TODO-</div>
+        <div>Decorations done<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Invitations Sent<br />-TODO-</div>

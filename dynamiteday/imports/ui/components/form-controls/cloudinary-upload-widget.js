@@ -15,8 +15,8 @@ Template.Cloudinary_Upload_Widget.events({
         max_file_size: '10000000',
         //max_image_width: '500',
         //max_image_height: '500',
-        min_image_width: '300',
-        min_image_height: '300',
+        min_image_width: '100',
+        min_image_height: '100',
       },
       (error, result) => {
         if (error) {

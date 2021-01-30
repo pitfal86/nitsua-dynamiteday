@@ -29,6 +29,7 @@
     text-align: center;
     color: #612121;
     font-weight: 900;
+    padding-left: 5px;
 }
 
 .grid-container-page > div {
@@ -70,7 +71,8 @@ hr {
     height: 1px;
     border: 0;
     border-top: 1px solid #713633;
-    margin: 1em 0; padding: 0;
+    margin: 1em 0;
+    margin-left: 10px;
 }
 
 body {
@@ -91,6 +93,17 @@ body {
 .grid-container-uploaded {
     display: grid;
     grid-template-columns: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%);
+    background-color: #f7c783;
+    font-family: cursive;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.grid-container-weddingparty {
+    display: grid;
+    grid-template-columns: minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 25%);
     background-color: #f7c783;
     font-family: cursive;
     text-align: center;
