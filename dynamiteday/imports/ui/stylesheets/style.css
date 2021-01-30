@@ -112,6 +112,17 @@ body {
     padding-left: 15px;
 }
 
+.grid-container-weddinginfo {
+    display: grid;
+    grid-template-columns: minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 50%) ;
+    background-color: #f7c783;
+    font-family: cursive;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    padding-left: 15px;
+}
+
 .button {
     border-style: solid;
     border-color: #f7c783;
