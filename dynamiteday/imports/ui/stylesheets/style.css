@@ -6,22 +6,22 @@
     font-family: 'Bradley Hand';
     text-align: center;
     color:#f7c783;
-  }
+}
 
-  .grid-container > div {
+.grid-container > div {
     background-color:#713633;
     text-align: left;
     font-size: 30px;
     padding: 10px;
-  }
+}
 
-  .grid-container:hover {
+.grid-container:hover {
     background-color: #713633;
     text-align: center;
     cursor: pointer;
-  }
+}
 
-  .grid-container-page {
+.grid-container-page {
     display: grid;
     grid-template-columns: minmax(auto, 20%) auto auto auto auto;
     background-color: #f7c783;
@@ -29,29 +29,30 @@
     text-align: center;
     color: #612121;
     font-weight: 900;
-  }
+}
 
-  .grid-container-page > div {
+.grid-container-page > div {
     background-color: #f7c783;
     text-align: center;
     font-size: 20px;
     padding: 5px;
-  }
+}
 
-  .grid-container-page > span {
+.grid-container-page > span {
     background-color: #f7c783;
     text-align: center;
     font-size: 20px;
     padding: 5px;
-  }
+}
 
-  h1 {
+h1 {
+    color: #612121;
     font-family: cursive;
     font-size: 50px;
     text-align: center;
-  }
+}
 
-  h3 {
+h3 {
     font-family: 'Bradley Hand';
     font-size: 30px;
     text-align: center;
@@ -62,38 +63,77 @@
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-  }
+}
 
-  hr {
+hr {
     display: block;
     height: 1px;
     border: 0;
     border-top: 1px solid #713633;
     margin: 1em 0; padding: 0;
-  }
+}
 
-  body {
+body {
     background-color: #f7c783;
-  }
+}
 
-  .grid-container-upload {
+.grid-container-upload {
     display: grid;
-    grid-template-columns: minmax(auto, 20%) auto auto auto;
+    grid-template-columns: minmax(auto, 33%) auto auto;
     background-color: #f7c783;
     font-family: cursive;
     text-align: center;
     color: #612121;
     font-weight: 900;
-    margin: 1em;
-    }
+        padding-left: 15px;
+}
 
-  .grid-container-uploaded {
+.grid-container-uploaded {
     display: grid;
-    grid-template-columns: minmax(auto, 20%) auto auto auto auto;
+    grid-template-columns: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%);
     background-color: #f7c783;
     font-family: cursive;
     text-align: center;
     color: #612121;
     font-weight: 900;
-    margin: 1em;
-    }
+    padding-left: 15px;
+}
+
+.button {
+    border-style: solid;
+    border-color: #f7c783;
+    background-color: #713633;
+    color: #f7c783;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-width: 5px;
+}
+
+.button:hover {
+    border-style: solid;
+    border-color: #612121;
+    border-width: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=text] {
+    width: 80%;
+    padding: 15px 32px;
+    margin: 4px 2px;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: 18px;
+}

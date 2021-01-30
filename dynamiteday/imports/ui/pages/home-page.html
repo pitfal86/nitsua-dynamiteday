@@ -1,14 +1,14 @@
 <template name="Home_Page">
+  <div class="ui dividing header"><h1>Share wedding photos!</h1></div>
   <div>
     <form class="grid-container-upload  {{ successClass }} {{ errorClass }}">
-      <div class="ui dividing header"><h3>Upload wedding pictures</h3></div>
       <div>{{> Text_Form_Control label="Name" name="name" required=true errorMessage=(fieldError "name")}}</div>
       <div>{{> Cloudinary_Upload_Widget label="Image" required=true errorMessage=(fieldError "url")}}</div>
-      <div><br /><label>Submit when ready</label><br /><button class="ui primary button" type="submit">Submit</button></div>
+      <div><br /><label>3. Submit photo when ready</label><br /><button class="ui primary button" type="submit">Submit</button></div>
     </form>
 
     {{#if Template.subscriptionsReady}}
-    <div class="grid-container-upload">
+    <div class="grid-container-uploaded">
       {{#each image in images}}
       <div style="padding:5px">
         <div><a target="_blank" rel="noopener noreferrer" href="{{image.url}}"><img class="img-rounded img-responsive" src="{{image.url}}"></a></div>
@@ -16,28 +16,6 @@
       </div>
       {{/each}}
     </div>
-
-
-     <!-- <h3>Uploaded images</h3>
-      <table class="ui very basic table">
-        <thead>
-        <tr>
-          <th>Thumbnail</th>
-          <th>Name</th>
-          <th>Image</th>
-        </tr>
-        </thead>
-        <tbody>
-          {{#each image in images}}
-            <tr>
-              <td><img class="ui image" src="{{image.thumbnail}}"></td>
-              <td>{{image.name}}</td>
-              <td><a href="{{image.url}}">Full image</a></td>
-            </tr>
-          {{/each}}
-        </tbody>
-      </table>-->
     {{/if}}
-
   </div>
 </template>
