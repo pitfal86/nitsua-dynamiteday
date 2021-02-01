@@ -50,7 +50,7 @@ const ImagePage = (props) => {
               <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611979366/dynamitedayphotos/c4jjbcwq8wbl4oludek6.jpg"} />
             </div>
             <label style={{ padding: "10px" }}>
-                {"Chelsey is Tori’s cousin and they are only 10 months apart in age. They have been best friends since childhood and Chelsey knows Tori better than anyone. Chelsey is a director of a Rocky Mountain HIDAA and lives with her two dauchsands, Reggie and Gertie. She is “Sherpa” to 8 nieces and nephews, and very active in her church life. She is the maid of honor!"}
+                {"Chelsey is Tori’s cousin and they are only 10 months apart in age. They have been best friends since childhood and Chelsey knows Tori better than anyone. Chelsey is a director of a Rocky Mountain HIDAA and lives with her two dauchsands, Reggie and Gertie. She is “Sherpa” to 7 nieces and nephews, and very active in her church life. She is the maid of honor!"}
             </label>
         </div>
         <div>
@@ -88,7 +88,7 @@ const ImagePage = (props) => {
               <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611984032/dynamitedayphotos/mpheaj7v4qcmebxzlw93.jpg"} />
             </div>
             <label style={{ padding: "10px" }}>
-                {"Greg has been Thomas' friend the longest, but to avoid sounding old we'll not mention the exact years. Through thick and thing they've been through it all and for some reason Greg still answers the phone when Thomas calls. He's a great friend and person!"}
+                {"Greg has been Thomas' friend the longest, but to avoid sounding old we'll not mention the exact years. Through thick and thin they've been through it all and for some reason Greg still answers the phone when Thomas calls. He's a great friend and person!"}
             </label>
         </div>
         <div>
