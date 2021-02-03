@@ -1,3 +1,4 @@
+// cloudinary injection
 import '/imports/startup/client';
 import '/imports/api/imagedata';
 import '/imports/ui/layouts';
@@ -5,8 +6,7 @@ import '/imports/ui/pages';
 import '/imports/ui/stylesheets/style.css';
 import '/imports/ui/components/form-controls/';
 
-// all js is ran automatically
-// import the react lib
+// accordion injection
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
 import ImageList from '/imports/ui/components/accordion/image_list';
@@ -53,4 +53,35 @@ class App extends Component {
 // render the component to the screen
 Meteor.startup(() => {
     ReactDom.render(<App />, document.querySelector('.container'));
+
+
+
+    // if there are no polls available create sample data
+      //if (PolingData.find().count() === 0) {
+
+        // create sample polls
+        /*var samplePolls = [
+          {
+            question: 'Is Meteor awesome?',
+            choices: [
+              { text: 'Of course!', votes: 0 },
+              { text: 'Eh', votes: 0 },
+              { text: 'No. I like plain JS', votes: 0 }
+            ]
+          },
+          {
+            question: 'Is CSS3 Flexbox the greatest thing since array_slice(bread)?',
+            choices: [
+              { text: '100% yes', votes: 0 },
+              { text: '200% yes', votes: 0 },
+              { text: '300% yes', votes: 0 }
+            ]
+          }
+        ];*/
+
+        // loop over each sample poll and insert into database
+/*        _.each(samplePolls, function(poll) {
+          PollingData.insert(poll);
+        });*/
+       // }
 })

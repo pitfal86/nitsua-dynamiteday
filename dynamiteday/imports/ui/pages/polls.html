@@ -1,0 +1,50 @@
+<template name="polls">
+  <h1>RSVP</h1>
+  <form class="new-task">
+    <div class="grid-container-weddingguests">
+      <div>
+        <label>1. Enter your name(s)</label>
+        <br/>
+        <button class="ui primary button" id="addNewValue">+</button>
+        <button class="ui primary button" id="removeNewValue">-</button>
+      </div>
+      <div>
+        <label>2. Are you and everyone you added from step one Attending?</label>
+        <br/>
+      </div>
+      <div>
+        <label>3. Submit your name or list of names from step one when ready</label>
+        <br/>
+      </div>
+      <div>
+          <input type="text"  name="name" id="name" autocomplete="off" placeholder="Responding Person" />
+          {{#each inputs}}
+          <input type="text"  name="attendees" id="attendees" autocomplete="off" placeholder="Additional Person" />
+          {{/each}}
+      </div>
+
+      <div>
+        <input type="checkbox" id="yes">
+        Yes
+        <br/>
+        (Leave unchecked <br/>if not-attending)
+      </div>
+      <div>
+        <button class="ui primary button" id="submitAll" >Submit</button>
+      </div>
+    </div>
+  </form>
+  <h2>Guest List</h2>
+  <div class="grid-container-guestlist">
+    <div><label><u>Responding Person</u></label></div>
+    <div><label><u>Additional People</u></label></div>
+    <div><label><u>Attending</u></label></div>
+    {{ #each poll in polls }}
+    <div>{{poll.name}}</div>
+    <div>{{poll.attendeeList}}</div>
+    <div>{{poll.willAttend}}</div>
+    {{ /each }}
+  </div>
+  <hr style="margin-left: 15px; margin-right: 15px;">
+
+</template>

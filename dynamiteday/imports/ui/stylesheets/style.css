@@ -53,6 +53,14 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    color: #612121;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
 h3 {
     font-family: 'Bradley Hand';
     font-size: 30px;
@@ -72,7 +80,6 @@ hr {
     border: 0;
     border-top: 1px solid #713633;
     margin: 1em 0;
-    margin-left: 10px;
 }
 
 body {
@@ -112,9 +119,35 @@ body {
     padding-left: 15px;
 }
 
+.grid-container-weddingguests {
+    display: grid;
+    grid-template-columns: minmax(auto, 35%) minmax(auto, 25%) minmax(auto, 25%);
+    background-color: #f7c783;
+    font-family: cursive;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    padding: 15px;
+    margin-left: 5%;
+}
+.grid-container-weddingguests div{
+    padding: 10px;
+}
+
 .grid-container-weddinginfo {
     display: grid;
     grid-template-columns: minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 50%) ;
+    background-color: #f7c783;
+    font-family: cursive;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    padding-left: 15px;
+}
+
+.grid-container-guestlist {
+    display: grid;
+    grid-template-columns: minmax(auto, 33%) minmax(auto, 33%) minmax(auto, 33%);
     background-color: #f7c783;
     font-family: cursive;
     text-align: center;
@@ -128,7 +161,7 @@ body {
     border-color: #f7c783;
     background-color: #713633;
     color: #f7c783;
-    padding: 15px 32px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -142,7 +175,7 @@ body {
     border-style: solid;
     border-color: #612121;
     border-width: 5px;
-    padding: 15px 32px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -160,4 +193,9 @@ input[type=text] {
 
 label {
     font-size: 18px;
+    vertical-align: text-top;
+}
+
+.btn-group {
+    float: left;
 }
