@@ -88,13 +88,13 @@ body {
 
 .grid-container-upload {
     display: grid;
-    grid-template-columns: minmax(auto, 33%) auto auto;
+    grid-template-columns: minmax(auto, 32%) minmax(auto, 30%) minmax(auto, 30%);
     background-color: #f7c783;
-    font-family: cursive;
     text-align: center;
     color: #612121;
     font-weight: 900;
-        padding-left: 15px;
+    padding: 15px;
+    margin-left: 5%;
 }
 
 .grid-container-uploaded {
@@ -105,7 +105,7 @@ body {
     text-align: center;
     color: #612121;
     font-weight: 900;
-    padding-left: 15px;
+    padding: 15px;
 }
 
 .grid-container-weddingparty {
@@ -121,9 +121,8 @@ body {
 
 .grid-container-weddingguests {
     display: grid;
-    grid-template-columns: minmax(auto, 35%) minmax(auto, 25%) minmax(auto, 25%);
+    grid-template-columns: minmax(auto, 32%) minmax(auto, 30%) minmax(auto, 30%);
     background-color: #f7c783;
-    font-family: cursive;
     text-align: center;
     color: #612121;
     font-weight: 900;
@@ -192,7 +191,7 @@ input[type=text] {
 }
 
 label {
-    font-size: 18px;
+    font-size: 15px;
     vertical-align: text-top;
 }
 
