@@ -278,7 +278,7 @@ const ImagePage = (props) => {
             <a href="https://www.menswearhouse.com/" target="_blank">Mens Wearhouse</a>
         </div>
         <div>
-            <img className="center" src={"https://image.menswearhouse.com/is/image/marketing/21-2396537-hp-sh-wedding-2x.jpg"} />
+            <img style={{ width: "70%" }} className="center" src={"https://image.menswearhouse.com/is/image/marketing/21-2396537-hp-sh-wedding-2x.jpg"} />
         </div>
         <div className={classes.imageModal}>
             <img style={{ width: "40%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611987018/dynamitedayphotos/IMG_0329_m2hx5d.jpg"} />
@@ -295,18 +295,54 @@ const ImagePage = (props) => {
             <a href="https://www.gohawaii.com/islands/maui" target="_blank">Hawaii - Maui</a>
         </div>
         <div>
-            <img className="center" src={"https://www.gohawaii.com/sites/default/files/styles/wide_carousel_large/public/content-carousel-images/10105_mauiregionslp_VideoThumbnail.jpg?itok=vzKj-jK9"} />
+            <img style={{ width: "70%" }} className="center" src={"https://www.gohawaii.com/sites/default/files/styles/wide_carousel_large/public/content-carousel-images/10105_mauiregionslp_VideoThumbnail.jpg?itok=vzKj-jK9"} />
         </div>
         <div>
-            <img  className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611986922/dynamitedayphotos/Screen_Shot_2021-01-25_at_1.07.59_PM_kpqktb.png"} />
+            <a href="https://www.google.com/maps/dir/ritz+carlton+maui/Hyatt+Regency+Maui+Resort+And+Spa,+Nohea+Kai+Drive,+Lahaina,+HI/Wailea+Beach+Resort+-+Marriott,+Maui,+Wailea+Alanui+Drive,+Wailea-Makena,+HI/H%C4%81na-Maui+Resort,+Hana+Highway,+Hana,+HI/@20.8439134,-156.6212288,10z/data=!3m1!4b1!4m26!4m25!1m5!1m1!1s0x7eaad5b7bcb45bf1:0x7c518822f6ca0041!2m2!1d-156.6541142!2d21.0010684!1m5!1m1!1s0x79552b6b82cf7fb7:0x8b4f6cc2ff2fcb8e!2m2!1d-156.6921667!2d20.912971!1m5!1m1!1s0x7954dada4b61da4d:0xe73f5d288a7aae5b!2m2!1d-156.4428011!2d20.6878874!1m5!1m1!1s0x7954ac25effd1793:0xf451e46d890dd906!2m2!1d-155.9872211!2d20.754252!3e0" target="_blank"><img  style={{ width: "80%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611986922/dynamitedayphotos/Screen_Shot_2021-01-25_at_1.07.59_PM_kpqktb.png"} /></a>
         </div>
       </div>
       <hr></hr>
 
+      <div className="grid-container-page">
+        <div>
+          Invitations Picked
+          <br />
+          2-5-2021
+          <br />
+          <a href="https://www.shutterfly.com/cards-stationery/wedding-invitations/barn-door-wedding-invitation?_br_psugg_q=gate+fold+card?intpr=sitesearch_recommended" target="_blank">Shutterfly</a>
+          <br />
+          <br />
+          Invitations Sent
+          <br />
+          2-17-2021
+          <br />
+        </div>
+        <div className={classes.imageModal}>
+            <img style={{ width: "70%" }} className="center" src={"https://c3.staticsfly.com/asset/fetch/cs/GATEFOLD-591813-27482-MERCHLARGE_FRONT/thumbnail.preview/v1"} />
+        </div>
+        <div className={classes.imageModal}>
+            <img style={{ width: "70%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614031155/dynamitedayphotos/geiqnwqklsc3qkvy50az.jpg"} />
+        </div>
+      </div>
+      <hr></hr>
 
       <div className="grid-container-page">
-        <div>Invitations Picked<br />-TODO-</div>
+        <div>
+          Under Contract
+          <br />
+          2-15-2021
+          <br />
+          <a href="https://www.google.com/maps/place/23031+Hope+Dale+Ave,+Parker,+CO+80138/@39.5009152,-104.7235446,17z/data=!3m1!4b1!4m5!3m4!1s0x876c92459361623d:0xa974ede15b03ddf0!8m2!3d39.5009152!4d-104.7213559" target="_blank">23031 Hope Dale Ave, Parker, CO 80138</a>
+        </div>
+        <div className={classes.imageModal}>
+            <img style={{ width: "70%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614036829/dynamitedayphotos/j1ctc92t3ilhqmlqxcow.jpg"} />
+        </div>
+        <div className={classes.imageModal}>
+            <a href="https://www.google.com/maps/place/23031+Hope+Dale+Ave,+Parker,+CO+80138/@39.5009152,-104.7235446,17z/data=!3m1!4b1!4m5!3m4!1s0x876c92459361623d:0xa974ede15b03ddf0!8m2!3d39.5009152!4d-104.7213559" target="_blank"><img style={{ width: "100%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614036776/dynamitedayphotos/Screen_Shot_2021-02-22_at_4.30.05_PM_ezmgut.png"} /></a>
+        </div>
       </div>
+      <hr></hr>
+
       <div className="grid-container-page">
         <div>Flowers Picked<br />-TODO-</div>
       </div>
@@ -315,9 +351,6 @@ const ImagePage = (props) => {
       </div>
       <div className="grid-container-page">
         <div>Decorations done<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
-        <div>Invitations Sent<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Wedding Rings Picked<br />-TODO-</div>

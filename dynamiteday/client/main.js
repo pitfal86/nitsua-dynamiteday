@@ -12,6 +12,9 @@ import ReactDom from 'react-dom';
 import ImageList from '/imports/ui/components/accordion/image_list';
 import Axios from 'axios';
 
+// counter
+import DateCountdown from 'react-date-countdown-timer';
+
 class App extends Component {
     // all classes that extend component need a constructor
     constructor(props) {
@@ -33,7 +36,6 @@ class App extends Component {
                     allin: allinresponse.data.resources
                 });
             });
-
         });
     }
     render() {
@@ -44,6 +46,9 @@ class App extends Component {
         return (
             <div style={{ backgroundColor: "#f7c783" }}>
                 <img style={{ width: "100%", padding: "10px" }} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603820405/dynamitedayphotos/Header_ksmnyp.jpg" className='img-responsive center' />
+                <div className='countdown'>
+                    <DateCountdown dateTo='April 17, 2021 24:00:00 MST+00:00' mostSignificantFigure='day'  />
+                </div>
                 <ImageList mainpage={this.state.mainpage} allin={this.state.allin}/>
             </div>
         )
@@ -53,35 +58,4 @@ class App extends Component {
 // render the component to the screen
 Meteor.startup(() => {
     ReactDom.render(<App />, document.querySelector('.container'));
-
-
-
-    // if there are no polls available create sample data
-      //if (PolingData.find().count() === 0) {
-
-        // create sample polls
-        /*var samplePolls = [
-          {
-            question: 'Is Meteor awesome?',
-            choices: [
-              { text: 'Of course!', votes: 0 },
-              { text: 'Eh', votes: 0 },
-              { text: 'No. I like plain JS', votes: 0 }
-            ]
-          },
-          {
-            question: 'Is CSS3 Flexbox the greatest thing since array_slice(bread)?',
-            choices: [
-              { text: '100% yes', votes: 0 },
-              { text: '200% yes', votes: 0 },
-              { text: '300% yes', votes: 0 }
-            ]
-          }
-        ];*/
-
-        // loop over each sample poll and insert into database
-/*        _.each(samplePolls, function(poll) {
-          PollingData.insert(poll);
-        });*/
-       // }
 })

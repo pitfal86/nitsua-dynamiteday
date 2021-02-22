@@ -198,3 +198,25 @@ label {
 .btn-group {
     float: left;
 }
+
+.countdown {
+    font-size: 15px;
+    text-align: center;
+    color: #612121;
+}
+
+span.day {
+    font-size: 25px;
+}
+
+span.hour {
+    font-size: 25px;
+}
+
+span.min {
+    font-size: 25px;
+}
+
+span.sec {
+    font-size: 25px;
+}
