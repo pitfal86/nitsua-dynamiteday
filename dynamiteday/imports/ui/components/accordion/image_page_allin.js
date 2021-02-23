@@ -261,10 +261,10 @@ const ImagePage = (props) => {
             <a href="https://www.shutterfly.com/share-product/?shareid=e7749ce2-90a7-4229-8d42-d6f3c5d6582c&cid=SHARPRDWEBORDEM&esch=1" target="_blank">Shutterfly</a>
         </div>
         <div>
-            <img className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg"} />
+            <a href="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg" target="_blank"><img className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611941753/dynamitedayphotos/savethedate_xfffzf.jpg"} /></a>
         </div>
         <div className={classes.imageModal}>
-            <img className={classes.imageModal} src={"https://cdn-image.staticsfly.com/i/tws/store/P254815SY_CAT_tws_hero_0402.jpg"} />
+            <a href="https://cdn-image.staticsfly.com/i/tws/store/P254815SY_CAT_tws_hero_0402.jpg" target="_blank"><img className={classes.imageModal} src={"https://cdn-image.staticsfly.com/i/tws/store/P254815SY_CAT_tws_hero_0402.jpg"} /></a>
         </div>
       </div>
       <hr></hr>
@@ -278,10 +278,10 @@ const ImagePage = (props) => {
             <a href="https://www.menswearhouse.com/" target="_blank">Mens Wearhouse</a>
         </div>
         <div>
-            <img style={{ width: "70%" }} className="center" src={"https://image.menswearhouse.com/is/image/marketing/21-2396537-hp-sh-wedding-2x.jpg"} />
+            <a href="https://www.menswearhouse.com/" target="_blank"><img style={{ width: "70%" }} className="center" src={"https://image.menswearhouse.com/is/image/marketing/21-2396537-hp-sh-wedding-2x.jpg"} /></a>
         </div>
         <div className={classes.imageModal}>
-            <img style={{ width: "40%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611987018/dynamitedayphotos/IMG_0329_m2hx5d.jpg"} />
+            <a href="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611987018/dynamitedayphotos/IMG_0329_m2hx5d.jpg" target="_blank"><img style={{ width: "40%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611987018/dynamitedayphotos/IMG_0329_m2hx5d.jpg"} /></a>
         </div>
       </div>
       <hr></hr>
@@ -295,7 +295,7 @@ const ImagePage = (props) => {
             <a href="https://www.gohawaii.com/islands/maui" target="_blank">Hawaii - Maui</a>
         </div>
         <div>
-            <img style={{ width: "70%" }} className="center" src={"https://www.gohawaii.com/sites/default/files/styles/wide_carousel_large/public/content-carousel-images/10105_mauiregionslp_VideoThumbnail.jpg?itok=vzKj-jK9"} />
+            <a href="https://www.gohawaii.com/islands/maui" target="_blank"><img style={{ width: "70%" }} className="center" src={"https://www.gohawaii.com/sites/default/files/styles/wide_carousel_large/public/content-carousel-images/10105_mauiregionslp_VideoThumbnail.jpg?itok=vzKj-jK9"} /></a>
         </div>
         <div>
             <a href="https://www.google.com/maps/dir/ritz+carlton+maui/Hyatt+Regency+Maui+Resort+And+Spa,+Nohea+Kai+Drive,+Lahaina,+HI/Wailea+Beach+Resort+-+Marriott,+Maui,+Wailea+Alanui+Drive,+Wailea-Makena,+HI/H%C4%81na-Maui+Resort,+Hana+Highway,+Hana,+HI/@20.8439134,-156.6212288,10z/data=!3m1!4b1!4m26!4m25!1m5!1m1!1s0x7eaad5b7bcb45bf1:0x7c518822f6ca0041!2m2!1d-156.6541142!2d21.0010684!1m5!1m1!1s0x79552b6b82cf7fb7:0x8b4f6cc2ff2fcb8e!2m2!1d-156.6921667!2d20.912971!1m5!1m1!1s0x7954dada4b61da4d:0xe73f5d288a7aae5b!2m2!1d-156.4428011!2d20.6878874!1m5!1m1!1s0x7954ac25effd1793:0xf451e46d890dd906!2m2!1d-155.9872211!2d20.754252!3e0" target="_blank"><img  style={{ width: "80%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611986922/dynamitedayphotos/Screen_Shot_2021-01-25_at_1.07.59_PM_kpqktb.png"} /></a>
@@ -318,10 +318,10 @@ const ImagePage = (props) => {
           <br />
         </div>
         <div className={classes.imageModal}>
-            <img style={{ width: "70%" }} className="center" src={"https://c3.staticsfly.com/asset/fetch/cs/GATEFOLD-591813-27482-MERCHLARGE_FRONT/thumbnail.preview/v1"} />
+            <a href="https://c3.staticsfly.com/asset/fetch/cs/GATEFOLD-591813-27482-MERCHLARGE_FRONT/thumbnail.preview/v1" target="_blank"><img style={{ width: "70%" }} className="center" src={"https://c3.staticsfly.com/asset/fetch/cs/GATEFOLD-591813-27482-MERCHLARGE_FRONT/thumbnail.preview/v1"} /></a>
         </div>
         <div className={classes.imageModal}>
-            <img style={{ width: "70%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614031155/dynamitedayphotos/geiqnwqklsc3qkvy50az.jpg"} />
+            <a href="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614031155/dynamitedayphotos/geiqnwqklsc3qkvy50az.jpg" target="_blank"><img style={{ width: "70%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614031155/dynamitedayphotos/geiqnwqklsc3qkvy50az.jpg"} /></a>
         </div>
       </div>
       <hr></hr>
@@ -335,7 +335,7 @@ const ImagePage = (props) => {
           <a href="https://www.google.com/maps/place/23031+Hope+Dale+Ave,+Parker,+CO+80138/@39.5009152,-104.7235446,17z/data=!3m1!4b1!4m5!3m4!1s0x876c92459361623d:0xa974ede15b03ddf0!8m2!3d39.5009152!4d-104.7213559" target="_blank">23031 Hope Dale Ave, Parker, CO 80138</a>
         </div>
         <div className={classes.imageModal}>
-            <img style={{ width: "70%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614036829/dynamitedayphotos/j1ctc92t3ilhqmlqxcow.jpg"} />
+            <a href="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614036829/dynamitedayphotos/j1ctc92t3ilhqmlqxcow.jpg" target="_blank"><img style={{ width: "70%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614036829/dynamitedayphotos/j1ctc92t3ilhqmlqxcow.jpg"} /></a>
         </div>
         <div className={classes.imageModal}>
             <a href="https://www.google.com/maps/place/23031+Hope+Dale+Ave,+Parker,+CO+80138/@39.5009152,-104.7235446,17z/data=!3m1!4b1!4m5!3m4!1s0x876c92459361623d:0xa974ede15b03ddf0!8m2!3d39.5009152!4d-104.7213559" target="_blank"><img style={{ width: "100%" }} className="center" src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614036776/dynamitedayphotos/Screen_Shot_2021-02-22_at_4.30.05_PM_ezmgut.png"} /></a>
