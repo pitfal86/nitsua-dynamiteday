@@ -3,20 +3,30 @@ import { ReactiveDict } from 'meteor/reactive-dict';
 import { PollingData } from '../../api/imagedata/polingdata.js';
 
 const displayErrorMessages = 'displayErrorMessages';
-
 Template.polls.onCreated(function onCreated() {
     this.messageFlags = new ReactiveDict();
     this.messageFlags.set(displayErrorMessages, false);
     this.subscribe('PollingData');
     this.inputs = new ReactiveVar([])
+    this.totalCount = 0;
 });
 
 Template.polls.helpers({
+
     errorClass() {
         return Template.instance().messageFlags.get(displayErrorMessages) ? 'error' : '';
     },
     polls() {
         return PollingData.find();
+    },
+    viewersCount : function(viewer, attending){
+        if (attending === "Yes"){
+            Template.instance().totalCount = Template.instance().totalCount + viewer.length + 1;
+        }
+        return (viewer.length + 1 || 0);
+    },
+    viewTotal () {
+        return Template.instance().totalCount;
     },
     inputs: function () {
         return Template.instance().inputs.get();

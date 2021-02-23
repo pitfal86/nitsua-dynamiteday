@@ -42,8 +42,9 @@
     {{ #each poll in polls }}
     <div>{{poll.name}}</div>
     <div>{{poll.attendeeList}}</div>
-    <div>{{poll.willAttend}}</div>
+    <div>{{viewersCount poll.attendeeList poll.willAttend}} {{poll.willAttend}} ( {{viewTotal}} Total Will Attend )</div>
     {{ /each }}
+
   </div>
   <hr style="margin-left: 15px; margin-right: 15px;">
 

@@ -3,7 +3,7 @@
     grid-template-columns: auto minmax(186px, auto) auto;
     background-color: #f7c783;
     padding: 10px;
-    font-family: 'Bradley Hand';
+    font-family: fantasy;
     text-align: center;
     color:#f7c783;
 }
@@ -25,7 +25,7 @@
     display: grid;
     grid-template-columns: minmax(auto, 20%) auto auto auto auto;
     background-color: #f7c783;
-    font-family: cursive;
+    font-family: fantasy;
     text-align: center;
     color: #612121;
     font-weight: 900;
@@ -48,21 +48,23 @@
 
 h1 {
     color: #612121;
-    font-family: cursive;
+    font-family: fantasy;
     font-size: 50px;
     text-align: center;
+    margin-top: 2%;
+    margin-bottom: -2%;
 }
 
 h2 {
     color: #612121;
-    font-family: cursive;
+    font-family: fantasy;
     font-size: 30px;
     text-align: center;
     text-decoration: underline;
 }
 
 h3 {
-    font-family: 'Bradley Hand';
+    font-family: fantasy;
     font-size: 30px;
     text-align: center;
 }
@@ -94,6 +96,7 @@ body {
     color: #612121;
     font-weight: 900;
     padding: 15px;
+    font-family: fantasy;
     margin-left: 5%;
 }
 
@@ -101,7 +104,7 @@ body {
     display: grid;
     grid-template-columns: minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%) minmax(auto, 20%);
     background-color: #f7c783;
-    font-family: cursive;
+    font-family: fantasy;
     text-align: center;
     color: #612121;
     font-weight: 900;
@@ -112,7 +115,7 @@ body {
     display: grid;
     grid-template-columns: minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 25%);
     background-color: #f7c783;
-    font-family: cursive;
+    font-family: fantasy;
     text-align: center;
     color: #612121;
     font-weight: 900;
@@ -124,6 +127,7 @@ body {
     grid-template-columns: minmax(auto, 32%) minmax(auto, 30%) minmax(auto, 30%);
     background-color: #f7c783;
     text-align: center;
+    font-family: fantasy;
     color: #612121;
     font-weight: 900;
     padding: 15px;
@@ -137,7 +141,7 @@ body {
     display: grid;
     grid-template-columns: minmax(auto, 25%) minmax(auto, 25%) minmax(auto, 50%) ;
     background-color: #f7c783;
-    font-family: cursive;
+    font-family: fantasy;
     text-align: center;
     color: #612121;
     font-weight: 900;
@@ -148,7 +152,7 @@ body {
     display: grid;
     grid-template-columns: minmax(auto, 33%) minmax(auto, 33%) minmax(auto, 33%);
     background-color: #f7c783;
-    font-family: cursive;
+    font-family: fantasy;
     text-align: center;
     color: #612121;
     font-weight: 900;
@@ -203,6 +207,22 @@ label {
     font-size: 15px;
     text-align: center;
     color: #612121;
+}
+
+.countdownTxt {
+    font-size: 25px;
+    text-align: center;
+    color: #612121;
+    font-weight: 900;
+    display: inline;
+    vertical-align: inherit;
+    font-family: fantasy;
+}
+
+span.odometer-block {
+    margin-left: 5%;
+        font-weight: 900;
+    font-family: fantasy;
 }
 
 span.day {

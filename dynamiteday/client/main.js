@@ -47,7 +47,7 @@ class App extends Component {
             <div style={{ backgroundColor: "#f7c783" }}>
                 <img style={{ width: "100%", padding: "10px" }} src="https://res.cloudinary.com/dz7kvpuzo/image/upload/v1603820405/dynamitedayphotos/Header_ksmnyp.jpg" className='img-responsive center' />
                 <div className='countdown'>
-                    <DateCountdown dateTo='2021-04-17T18:00:00' mostSignificantFigure='day'  />
+                    <h1 className='countdownTxt'>Countdown to 4-17-2021 @5:00pm</h1> <DateCountdown dateTo='2021-04-17T18:00:00' mostSignificantFigure='day'  />
                 </div>
                 <ImageList mainpage={this.state.mainpage} allin={this.state.allin}/>
             </div>
