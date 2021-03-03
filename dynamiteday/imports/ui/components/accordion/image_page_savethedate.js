@@ -67,7 +67,7 @@ const ImagePage = (props) => {
             <br />
             <label>{"Kacey"}</label>
             <div className={classes.imageModal}>
-              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1611979382/dynamitedayphotos/lnforay7qc6j2opizpp8.jpg"} />
+              <img className={classes.imageModal} src={"https://res.cloudinary.com/dz7kvpuzo/image/upload/v1614807845/dynamitedayphotos/kacey_new_tm58gb.jpg"} />
             </div>
             <label style={{ padding: "10px" }}>
                 {"Kacey is Tori’s best friend from work. They met 9 years ago when they both started working as CNAs on the same floor in the hospital they both currently still work for. Kacey is Tori’s best adventure buddy, always ready and willing to do anything and everything active. She is a stroke coordinator at a Comprehensive Stroke Center hospital and has two girls, Addie and Kendall. Her boyfriend Tony works at the same hospital. Kacey is a bridesmaid!"}
