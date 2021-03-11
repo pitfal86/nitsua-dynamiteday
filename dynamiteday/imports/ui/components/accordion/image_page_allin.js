@@ -344,16 +344,25 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
-        <div>Flowers Picked<br />-TODO-</div>
-      </div>
+              <div>
+                Flowers picked
+                <br />
+                2-19-2021
+              </div>
+              <div>
+                Wedding Rings Picked
+                <br />
+                3-6-2021
+              </div>
+
+            </div>
+            <hr></hr>
+
       <div className="grid-container-page">
         <div>Cake Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Decorations done<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
-        <div>Wedding Rings Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Final Head Count<br />-TODO-</div>
