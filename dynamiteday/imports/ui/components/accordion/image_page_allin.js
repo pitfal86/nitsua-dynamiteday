@@ -15,7 +15,7 @@ function createAllInMap(arr) {
       }
     }
   }
-  return mapOfUniqueElements;
+  return new Map([...mapOfUniqueElements.entries()].sort());
 }
 
 const useStyles = createUseStyles({
@@ -35,13 +35,13 @@ const ImagePage = (props) => {
   const allInMap = createAllInMap(props.allin);
   const allInIterator = allInMap.keys();
 
-  // Venue Two
-  var venueTwoDate;
-  var venueTwoCaption;
-  var VenueTwo = allInMap.get(allInIterator.next().value).map(image => {
+  // The Proposal
+  var propDate;
+  var propCaption;
+  var TheProposal = allInMap.get(allInIterator.next().value).map(image => {
     const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
-    venueTwoDate = image.context.custom.alt;
-    venueTwoCaption = image.context.custom.caption;
+    propDate = image.context.custom.alt;
+    propCaption = image.context.custom.caption;
     return (
       <span key={image.public_id}>
         <SimpleModalLauncher imgURL={url}>
@@ -77,34 +77,13 @@ const ImagePage = (props) => {
     )
   });
 
-  // Venue Four
-  var venueFourDate;
-  var venueFourCaption;
-  var VenueFour = allInMap.get(allInIterator.next().value).map(image => {
+  // Venue Two
+  var venueTwoDate;
+  var venueTwoCaption;
+  var VenueTwo = allInMap.get(allInIterator.next().value).map(image => {
     const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
-    venueFourDate = image.context.custom.alt;
-    venueFourCaption = image.context.custom.caption;
-    return (
-      <span key={image.public_id}>
-        <SimpleModalLauncher imgURL={url}>
-          <div className={classes.imageModal}>
-            <img
-              className={classes.imageInModal}
-              src={url}
-            />
-          </div>
-        </SimpleModalLauncher>
-      </span>
-    )
-  });
-
-  // Venue Three
-  var venueThreeDate;
-  var venueThreeCaption;
-  var VenueThree = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
-    venueThreeDate = image.context.custom.alt;
-    venueThreeCaption = image.context.custom.caption;
+    venueTwoDate = image.context.custom.alt;
+    venueTwoCaption = image.context.custom.caption;
     return (
       <span key={image.public_id}>
         <SimpleModalLauncher imgURL={url}>
@@ -140,13 +119,55 @@ const ImagePage = (props) => {
     )
   });
 
-  // The Proposal
-  var propDate;
-  var propCaption;
-  var TheProposal = allInMap.get(allInIterator.next().value).map(image => {
+  // Venue Three
+  var venueThreeDate;
+  var venueThreeCaption;
+  var VenueThree = allInMap.get(allInIterator.next().value).map(image => {
     const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
-    propDate = image.context.custom.alt;
-    propCaption = image.context.custom.caption;
+    venueThreeDate = image.context.custom.alt;
+    venueThreeCaption = image.context.custom.caption;
+    return (
+      <span key={image.public_id}>
+        <SimpleModalLauncher imgURL={url}>
+          <div className={classes.imageModal}>
+            <img
+              className={classes.imageInModal}
+              src={url}
+            />
+          </div>
+        </SimpleModalLauncher>
+      </span>
+    )
+  });
+
+  // Venue Four
+  var venueFourDate;
+  var venueFourCaption;
+  var VenueFour = allInMap.get(allInIterator.next().value).map(image => {
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    venueFourDate = image.context.custom.alt;
+    venueFourCaption = image.context.custom.caption;
+    return (
+      <span key={image.public_id}>
+        <SimpleModalLauncher imgURL={url}>
+          <div className={classes.imageModal}>
+            <img
+              className={classes.imageInModal}
+              src={url}
+            />
+          </div>
+        </SimpleModalLauncher>
+      </span>
+    )
+  });
+
+  // Bachelor Party
+  var bachelorDate;
+  var bachelorCaption;
+  var BachelorParty = allInMap.get(allInIterator.next().value).map(image => {
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    bachelorDate = image.context.custom.alt;
+    bachelorCaption = image.context.custom.caption;
     return (
       <span key={image.public_id}>
         <SimpleModalLauncher imgURL={url}>
@@ -170,12 +191,6 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
-        <div>{engCaption}<br />{engDate}</div>
-        {TheEng}
-      </div>
-      <hr></hr>
-
-      <div className="grid-container-page">
         <div>{venueOneCaption}<br />{venueOneDate}</div>
         {VenueOne}
       </div>
@@ -184,6 +199,12 @@ const ImagePage = (props) => {
       <div className="grid-container-page">
         <div>{venueTwoCaption}<br />{venueTwoDate}</div>
         {VenueTwo}
+      </div>
+      <hr></hr>
+
+      <div className="grid-container-page">
+        <div>{engCaption}<br />{engDate}</div>
+        {TheEng}
       </div>
       <hr></hr>
 
@@ -200,7 +221,7 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
-        <div>Venue Picked
+        <div>7. Venue Picked
           <br />
           11-1-2020
           <br />
@@ -212,35 +233,35 @@ const ImagePage = (props) => {
 
       <div className="grid-container-page">
         <div>
-          Dress picked
+          8. Dress picked
           <br />
           11-16-2020
           <br />
             <a href="https://www.davidsbridal.com/" target="_blank">David's Bridal</a>
         </div>
         <div>
-          DJ picked
+          9. DJ picked
           <br />
           11-24-2020
           <br />
             <a href="https://myelitedj.com/" target="_blank">Elite DJ</a>
         </div>
         <div>
-          Wedding Planner picked
+          10. Wedding Planner picked
           <br />
           12-1-2020
           <br />
             <a href="https://www.birchandhoneycollective.com/" target="_blank">Birch and Honey</a>
         </div>
         <div>
-          Photographer Picked
+          11. Photographer Picked
           <br />
           12-2-2020
           <br />
             <a href="https://www.alldigitalphotoandvideo.com/" target="_blank">All Digital Photo and Video</a>
         </div>
         <div>
-          Catering Picked
+          12. Catering Picked
           <br />
           12-5-2020
           <br />
@@ -249,12 +270,9 @@ const ImagePage = (props) => {
       </div>
       <hr></hr>
 
-
-
-
       <div className="grid-container-page">
         <div>
-          Save the date picked
+          13. Save the date picked
           <br />
           12-7-2020
           <br />
@@ -271,7 +289,7 @@ const ImagePage = (props) => {
 
       <div className="grid-container-page">
         <div>
-          Tuxedos picked
+          14. Tuxedos picked
           <br />
           1-16-2021
           <br />
@@ -288,7 +306,7 @@ const ImagePage = (props) => {
 
       <div className="grid-container-page">
         <div>
-          Honeymoon Booked
+          15. Honeymoon Booked
           <br />
           1-25-2021
           <br />
@@ -305,17 +323,11 @@ const ImagePage = (props) => {
 
       <div className="grid-container-page">
         <div>
-          Invitations Picked
+          16. Invitations Picked
           <br />
           2-5-2021
           <br />
           <a href="https://www.shutterfly.com/cards-stationery/wedding-invitations/barn-door-wedding-invitation?_br_psugg_q=gate+fold+card?intpr=sitesearch_recommended" target="_blank">Shutterfly</a>
-          <br />
-          <br />
-          Invitations Sent
-          <br />
-          2-17-2021
-          <br />
         </div>
         <div className={classes.imageModal}>
             <a href="https://c3.staticsfly.com/asset/fetch/cs/GATEFOLD-591813-27482-MERCHLARGE_FRONT/thumbnail.preview/v1" target="_blank"><img style={{ width: "70%" }} className="center" src={"https://c3.staticsfly.com/asset/fetch/cs/GATEFOLD-591813-27482-MERCHLARGE_FRONT/thumbnail.preview/v1"} /></a>
@@ -328,7 +340,7 @@ const ImagePage = (props) => {
 
       <div className="grid-container-page">
         <div>
-          Under Contract
+          17. Under Contract
           <br />
           2-15-2021
           <br />
@@ -344,19 +356,31 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
-              <div>
-                Flowers picked
-                <br />
-                2-19-2021
-              </div>
-              <div>
-                Wedding Rings Picked
-                <br />
-                3-6-2021
-              </div>
+        <div>
+          18. Invitations Sent
+          <br />
+          2-17-2021
+        </div>
+        <div>
+          19. Flowers picked
+          <br />
+          2-19-2021
+        </div>
+        <div>
+          20. Wedding Rings Picked
+          <br />
+          3-6-2021
+        </div>
+      </div>
+      <hr></hr>
 
-            </div>
-            <hr></hr>
+      <div>
+        <div className="grid-container-page">
+            <div>{bachelorCaption}<br />{bachelorDate}</div>
+            {BachelorParty}
+        </div>
+      </div>
+      <hr></hr>
 
       <div className="grid-container-page">
         <div>Cake Picked<br />-TODO-</div>
@@ -366,9 +390,6 @@ const ImagePage = (props) => {
       </div>
       <div className="grid-container-page">
         <div>Final Head Count<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
-        <div>Bachelor Party<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
         <div>Bachelorette Party<br />-TODO-</div>
