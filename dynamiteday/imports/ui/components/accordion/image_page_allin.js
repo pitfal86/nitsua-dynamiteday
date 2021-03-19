@@ -39,7 +39,7 @@ const ImagePage = (props) => {
   var propDate;
   var propCaption;
   var TheProposal = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     propDate = image.context.custom.alt;
     propCaption = image.context.custom.caption;
     return (
@@ -60,7 +60,7 @@ const ImagePage = (props) => {
   var venueOneDate;
   var venueOneCaption;
   var VenueOne = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     venueOneDate = image.context.custom.alt;
     venueOneCaption = image.context.custom.caption;
     return (
@@ -81,7 +81,7 @@ const ImagePage = (props) => {
   var venueTwoDate;
   var venueTwoCaption;
   var VenueTwo = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     venueTwoDate = image.context.custom.alt;
     venueTwoCaption = image.context.custom.caption;
     return (
@@ -102,7 +102,7 @@ const ImagePage = (props) => {
   var engDate;
   var engCaption;
   var TheEng = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     engDate = image.context.custom.alt;
     engCaption = image.context.custom.caption;
     return (
@@ -123,7 +123,7 @@ const ImagePage = (props) => {
   var venueThreeDate;
   var venueThreeCaption;
   var VenueThree = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     venueThreeDate = image.context.custom.alt;
     venueThreeCaption = image.context.custom.caption;
     return (
@@ -144,7 +144,7 @@ const ImagePage = (props) => {
   var venueFourDate;
   var venueFourCaption;
   var VenueFour = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     venueFourDate = image.context.custom.alt;
     venueFourCaption = image.context.custom.caption;
     return (
@@ -165,9 +165,30 @@ const ImagePage = (props) => {
   var bachelorDate;
   var bachelorCaption;
   var BachelorParty = allInMap.get(allInIterator.next().value).map(image => {
-    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/" + image.public_id;
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
     bachelorDate = image.context.custom.alt;
     bachelorCaption = image.context.custom.caption;
+    return (
+      <span key={image.public_id}>
+        <SimpleModalLauncher imgURL={url}>
+          <div className={classes.imageModal}>
+            <img
+              className={classes.imageInModal}
+              src={url}
+            />
+          </div>
+        </SimpleModalLauncher>
+      </span>
+    )
+  });
+
+  // Tasting Party
+  var tastingDate;
+  var tastingCaption;
+  var TastingParty = allInMap.get(allInIterator.next().value).map(image => {
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
+    tastingDate = image.context.custom.alt;
+    tastingCaption = image.context.custom.caption;
     return (
       <span key={image.public_id}>
         <SimpleModalLauncher imgURL={url}>
@@ -381,6 +402,15 @@ const ImagePage = (props) => {
         </div>
       </div>
       <hr></hr>
+
+      <div>
+        <div className="grid-container-page">
+            <div>{tastingCaption}<br />{tastingDate}</div>
+            {TastingParty}
+        </div>
+      </div>
+      <hr></hr>
+
 
       <div className="grid-container-page">
         <div>Cake Picked<br />-TODO-</div>

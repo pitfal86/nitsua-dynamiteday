@@ -47,7 +47,7 @@ export default {
       boxShadow: [0, 0, '0.625rem', 'rgba(0, 0, 0, 0.2)'],
   
       '@media': {
-        width: '75%',
+        width: '55%',
       },
     },
   
