@@ -242,7 +242,7 @@ const ImagePage = (props) => {
       <hr></hr>
 
       <div className="grid-container-page">
-        <div>7. Venue Picked
+        <div>07. Venue Picked
           <br />
           11-1-2020
           <br />
@@ -254,14 +254,14 @@ const ImagePage = (props) => {
 
       <div className="grid-container-page">
         <div>
-          8. Dress picked
+          08. Dress picked
           <br />
           11-16-2020
           <br />
             <a href="https://www.davidsbridal.com/" target="_blank">David's Bridal</a>
         </div>
         <div>
-          9. DJ picked
+          09. DJ picked
           <br />
           11-24-2020
           <br />

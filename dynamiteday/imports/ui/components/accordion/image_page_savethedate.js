@@ -115,6 +115,23 @@ const ImagePage = (props) => {
 
       <hr></hr>
 
+      <div className="grid-container-weddinginfo">
+              <div>
+                  <h2>{"Registry Info"}</h2>
+              </div>
+              <div className={classes.imageModal}>
+                    <a href="https://www.target.com/gift-registry/giftgiver?registryId=fd9cac7bac81469ba1283c74807fadd5&type=WEDDING" target="_blank"><label>{"Target"}</label>
+                    <img className={classes.imageModal} src="https://cdn.freelogovectors.net/wp-content/uploads/2019/10/target_logo.png"></img>
+                  </a>
+              </div>
+              <div className={classes.imageModal}>
+                    <a href="https://www.amazon.com/wedding/registry/3V6S6W6K86E9K?ref=wr_search_page_result_2" target="_blank"><label>{"Amazon"}</label>
+                    <img className={classes.imageModal} src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG"></img>
+                  </a>
+              </div>
+            </div>
+            <hr></hr>
+
     </div>
   );
 }
