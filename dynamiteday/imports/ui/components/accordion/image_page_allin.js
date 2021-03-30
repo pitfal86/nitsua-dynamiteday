@@ -203,6 +203,48 @@ const ImagePage = (props) => {
     )
   });
 
+  // ClosingDate
+  var closingDate;
+  var closingCaption;
+  var ClosingParty = allInMap.get(allInIterator.next().value).map(image => {
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
+    closingDate = image.context.custom.alt;
+    closingCaption = image.context.custom.caption;
+    return (
+      <span key={image.public_id}>
+        <SimpleModalLauncher imgURL={url}>
+          <div className={classes.imageModal}>
+            <img
+              className={classes.imageInModal}
+              src={url}
+            />
+          </div>
+        </SimpleModalLauncher>
+      </span>
+    )
+  });
+
+  // WeddingShower
+  var showerDate;
+  var showerCaption;
+  var ShowerParty = allInMap.get(allInIterator.next().value).map(image => {
+    const url = "https://res.cloudinary.com/dz7kvpuzo/image/upload/c_scale,w_814/" + image.public_id;
+    showerDate = image.context.custom.alt;
+    showerCaption = image.context.custom.caption;
+    return (
+      <span key={image.public_id}>
+        <SimpleModalLauncher imgURL={url}>
+          <div className={classes.imageModal}>
+            <img
+              className={classes.imageInModal}
+              src={url}
+            />
+          </div>
+        </SimpleModalLauncher>
+      </span>
+    )
+  });
+
   return (
     <div>
       <div className="grid-container-page">
@@ -411,21 +453,30 @@ const ImagePage = (props) => {
       </div>
       <hr></hr>
 
+      <div>
+        <div className="grid-container-page">
+            <div>{closingCaption}<br />{closingDate}</div>
+            {ClosingParty}
+        </div>
+      </div>
+      <hr></hr>
+
+      <div>
+        <div className="grid-container-page">
+            <div>{showerCaption}<br />{showerDate}</div>
+            {ShowerParty}
+        </div>
+      </div>
+      <hr></hr>
 
       <div className="grid-container-page">
         <div>Cake Picked<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
-        <div>Decorations done<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
-        <div>Final Head Count<br />-TODO-</div>
-      </div>
-      <div className="grid-container-page">
         <div>Bachelorette Party<br />-TODO-</div>
       </div>
       <div className="grid-container-page">
-        <div>Rehearsal<br />-TODO-</div>
+        <div>Rehearsal / Rehearsal lunch<br />-TODO-</div>
       </div>
     </div>
   );
